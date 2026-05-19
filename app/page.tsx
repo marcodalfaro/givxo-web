@@ -1,35 +1,145 @@
+import Image from "next/image";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#F8F5F0] text-[#1F1F1F]">
-      <section className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 text-center">
-        <p className="mb-6 text-sm font-medium tracking-[0.35em] text-[#8A6F4D]">
-          GIVXO
-        </p>
+    <main className="page">
+      <nav className="navbar">
+        <div className="brand">
+  <Image
+  src="/logo.png"
+  alt="Givxo"
+  width={257}
+  height={80}
+  priority
+  className="logo"
+/>
+</div>
 
-        <h1 className="max-w-4xl text-5xl font-semibold tracking-tight md:text-7xl">
-          La forma más simple y elegante de organizar regalos de casamiento.
-        </h1>
+        <div className="nav-actions">
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#beneficios">Beneficios</a>
+          <button>Crear lista</button>
+        </div>
+      </nav>
 
-        <p className="mt-8 max-w-2xl text-lg leading-8 text-[#5F5F5F] md:text-xl">
-          Givxo permite que las parejas creen una lista de regalos deseados y que
-          sus invitados puedan contribuir fácilmente a cada experiencia, producto
-          o proyecto importante.
-        </p>
+      <section className="hero">
+        <div className="hero-content">
+          <div className="badge">
+            Regalos colaborativos para momentos importantes
+          </div>
 
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-          <a
-            href="#"
-            className="rounded-full bg-[#1F1F1F] px-8 py-4 text-sm font-semibold text-white transition hover:bg-black"
-          >
-            Crear lista
-          </a>
+          <h1>
+            Regalar nunca fue
+            <span> tan simple.</span>
+          </h1>
 
-          <a
-            href="#"
-            className="rounded-full border border-[#1F1F1F]/20 px-8 py-4 text-sm font-semibold transition hover:border-[#1F1F1F]"
-          >
-            Ver cómo funciona
-          </a>
+          <p>
+            Givxo permite crear listas de regalos modernas para que amigos y
+            familiares puedan aportar de forma simple, elegante y emocional.
+          </p>
+
+          <div className="hero-buttons">
+            <button className="primary-btn">
+              Crear mi lista
+            </button>
+
+            <button className="secondary-btn">
+              Ver cómo funciona
+            </button>
+          </div>
+
+          <div className="trust">
+            <div>
+              <strong>Simple</strong>
+              <span>para invitados</span>
+            </div>
+
+            <div>
+              <strong>Elegante</strong>
+              <span>para compartir</span>
+            </div>
+
+            <div>
+              <strong>Emocional</strong>
+              <span>para recordar</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-card">
+          <div className="gift-card">
+            <div className="avatar-icon">
+  <span>✈</span>
+</div>
+
+            <h3>Luna de miel</h3>
+
+            <p>
+              Ayudanos a vivir nuestro primer viaje juntos.
+            </p>
+
+            <div className="progress">
+              <div />
+            </div>
+
+            <div className="amounts">
+              <span>$1.250.000 reunidos</span>
+              <strong>78%</strong>
+            </div>
+
+            <button>Aportar regalo</button>
+          </div>
+
+          <div className="floating-card one">
+            <span>Heladera</span>
+            <strong>$35.000</strong>
+          </div>
+
+          <div className="floating-card two">
+            <span>Sillón</span>
+            <strong>$50.000</strong>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-label">
+          Cómo funciona
+        </div>
+
+        <h2>
+          Una experiencia moderna para regalar.
+        </h2>
+
+        <div className="steps">
+          <div className="step-card">
+            <span>01</span>
+
+            <h3>Creás tu lista</h3>
+
+            <p>
+              Elegís qué regalos o experiencias querés recibir.
+            </p>
+          </div>
+
+          <div className="step-card">
+            <span>02</span>
+
+            <h3>Compartís el link</h3>
+
+            <p>
+              Tus invitados pueden acceder desde cualquier dispositivo.
+            </p>
+          </div>
+
+          <div className="step-card">
+            <span>03</span>
+
+            <h3>Recibís aportes</h3>
+
+            <p>
+              Cada regalo se transforma en un aporte real para tu nueva etapa.
+            </p>
+          </div>
         </div>
       </section>
     </main>
